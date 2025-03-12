@@ -4,6 +4,7 @@ module.exports = {
     mode: "development",
     entry: "./src/app.ts",
     output: {
+        filename: "main.js",
         path: path.resolve(__dirname, "public/scripts")
     },
     resolve: {
@@ -19,9 +20,12 @@ module.exports = {
         ]
     },
     devServer: {
-        static: "./public",
+        static: {
+            directory: path.resolve(__dirname, "public")
+        },
         proxy: {
             "/api": "http://localhost:5000"
-        }
+        },
+        historyApiFallback: true
     }
 };
