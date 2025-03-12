@@ -1,0 +1,50 @@
+{
+  "name": "optics-graph",
+  "version": "1.0.0",
+  "description": "A nodeJS website for demonstrating a graph.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node public/scripts/main.js",
+    "dev": "nodemon --ext ts,js,json --exec ts-node src/app.ts",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "serve": "http-server public -p 8080",
+    "watch:serve": "concurrently \"npm run watch\" \"npm run serve\"",
+    "watch:server": "nodemon --watch src --ext ts --exec ts-node src/server.ts",
+    "watch:all": "concurrently \"npm run watch\" \"npm run watch:server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nelsonnyland/optics-graph.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nelsonnyland/optics-graph/issues"
+  },
+  "homepage": "https://github.com/nelsonnyland/optics-graph#readme",
+  "dependencies": {
+    "chart.js": "^4.4.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  },
+  "devDependencies": {
+    "@types/chart.js": "^2.9.41",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^22.13.10",
+    "http-server": "^14.1.1",
+    "nodemon": "^3.1.9",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
