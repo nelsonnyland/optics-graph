@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules/
+
+# dotenv environment variable files
+.env*
+
+# IDE and OS-specific files
+.vscode/
+
+# Git-generated files
+.git/
+
+# JS files (except configs)
+*.js
+!*.config.js
+
+# Tree 
+tree.txt

@@ -1,0 +1,10 @@
+node_modules
+.git
+.env
+.env.docker
+Dockerfile
+Dockerfile-frontend
+backend
+README.md
+tree.txt
+tsconfig.json

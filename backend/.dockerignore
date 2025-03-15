@@ -1,0 +1,12 @@
+node_modules
+.git
+.env
+.env.docker
+Dockerfile
+Dockerfile-frontend
+frontend
+public
+README.md
+tree.txt
+tsconfig.json
+webpack.config.js
