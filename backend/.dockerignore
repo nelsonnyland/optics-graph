@@ -8,5 +8,4 @@ frontend
 public
 README.md
 tree.txt
-tsconfig.json
 webpack.config.js
